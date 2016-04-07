@@ -1,0 +1,23 @@
+body.wwl-js-vm-modals-active
+  overflow: hidden
+
+  .wwl-js-vm-modals
+    display: block
+
+.wwl-js-vm-modals
+  +position(fixed, 0 0 0 0)
+  +user-select(none)
+  display: none
+  margin: 0
+  padding: 0
+  pointer-events: none
+
+.wwl-js-vm-modals-modal
+  +position(absolute, 0 0 0 0)
+  +user-select(none)
+  background-color: rgba(#000, .4)
+  margin: 0
+  padding: 0
+  pointer-events: all
+
+.wwl-js-vm-modals-modal-content

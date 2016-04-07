@@ -1,0 +1,16 @@
+{
+  "name": "wwl-js-vm-modals",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bourbon": ">=4.2.6",
+    "iron-overlay-behavior": "PolymerElements/iron-overlay-behavior#>=1.6.2",
+    "neat": ">=1.7.2",
+    "neon-animation": "PolymerElements/neon-animation#>=1.2.0",
+    "paper-dialog-behavior": "PolymerElements/paper-dialog-behavior#>=1.2.5",
+    "paper-dialog-scrollable": "PolymerElements/paper-dialog-scrollable#>=1.1.4",
+    "paper-spinner": "PolymerElements/paper-spinner#>=1.1.1",
+    "polymer": "Polymer/polymer#>=1.4.0",
+    "webcomponentsjs": ">=0.7.21"
+  }
+}
