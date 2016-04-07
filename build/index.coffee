@@ -22,14 +22,24 @@ domready ->
 
     vmConfig: _.extend({
 
+      beforeStart: (vm, moduleConfig) ->
+        vm.getView().triggerMethod 'attach'
+        vm.getView().triggerMethod 'show'
+
       afterStart: (vm, moduleConfig) ->
         window.vm = vm
         model = window.vm.addModal({
           view: new (require('./test_view'))({
             viewModule: vm
           }),
-          title: 'My Modal'
-          destroyOnClose: true
+          title:            'My Modal'
+          closeButton:      true
+          backTopButton:    true
+          backBottomButton: true
+          destroyOnClose:   true
+          cancelButton:     'Cancel'
+          doneButton:       'Done'
+          successButton:    'Success'
         })
 
         model.on 'view:beforeRender', ->          console.log 'view:beforeRender'

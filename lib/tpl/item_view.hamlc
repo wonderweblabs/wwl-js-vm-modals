@@ -1,0 +1,36 @@
+.modal
+  .modal-inner
+    .modal-header
+      .modal-header-inside
+
+        - if @closeButton == true
+          %a( href="#" class="wwl-button wwl-button-close" )
+            %i.mdi.mdi-close
+
+        - if @backTopButton == true
+          %a( href="#" class="wwl-button wwl-button-back" )
+            %i.mdi.mdi-chevron-left
+
+        %h1= @headline || @title
+
+    .modal-content
+      .wwl-js-vm-modals-modal-content
+
+    .modal-footer
+      .modal-footer-inside
+
+        - if @backBottomButton == true
+          %a( href="#" class="wwl-button wwl-button-back" )
+            %i.mdi.mdi-chevron-left
+
+        - if _.isString(@cancelButton) && _.size(@cancelButton) > 0
+          %a( href="#" class="wwl-button wwl-button-cancel" )
+            = @cancelButton
+
+        - if _.isString(@doneButton) && _.size(@doneButton) > 0
+          %a( href="#" class="wwl-button wwl-button-done" )
+            = @doneButton
+
+        - if _.isString(@successButton) && _.size(@successButton) > 0
+          %a( href="#" class="wwl-button wwl-button-success" )
+            = @successButton

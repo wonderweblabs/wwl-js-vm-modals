@@ -1,2 +1,2 @@
-%cmi-dialog-extended( id="animated" opened=true with-backdrop=false entry-animation="scale-up-animation" exit-animation="fade-out-animation" no-cancel-on-outside-click=true )
+%cmi-dialog-extended( id="animated" opened=true with-backdrop=false no-cancel-on-outside-click=true )
   .wwl-js-vm-modals-modal-content

@@ -11,7 +11,7 @@ module.exports = class Modal extends require('backbone').Model
     cancelButton:     ''
     doneButton:       ''
     successButton:    ''
-    noCancelOnEscKey:           false
+    noCancelOnEscKey:           true
     disableBackdropClickClose:  false
     viewId:           ''
     viewClass:        ''
@@ -19,6 +19,10 @@ module.exports = class Modal extends require('backbone').Model
     destroyOnCancel:    false
     destroyOnBackdrop:  false
     destroyOnClose:     false
+
+    # cmi only:
+    entryAnimation:     'scale-up-animation'
+    exitAnimation:      'fade-in-animation'
 
   initialize: (options = {}) =>
     @listenTo @, 'view:attach', @onViewAttach

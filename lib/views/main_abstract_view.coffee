@@ -2,8 +2,6 @@ module.exports = class MainAbstractView extends require('backbone.marionette').C
 
   template: false
 
-  className: 'wwl-js-vm-modals'
-
   initialize: ->
     @listenTo @collection, 'add',     @onCollectionChange
     @listenTo @collection, 'remove',  @onCollectionChange
