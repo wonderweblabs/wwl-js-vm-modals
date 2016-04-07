@@ -1,0 +1,141 @@
+$wwl-js-vm-modals-header-color: #4c4c4c
+$wwl-js-vm-modals-headline-color: #e5e5e5
+$wwl-js-vm-modals-footer-color: #e5e5e5
+
+$wwl-js-vm-modals-color-text: #424242
+
+.wwl-js-vm-modals-no-cmi
+
+  .modal
+    +border-top-radius(3px)
+    +border-bottom-radius(3px)
+    +display(flex)
+    margin: 24px 40px
+
+  .modal-inner
+    +display(flex)
+    +flex-direction(column)
+    +flex-wrap(nowrap)
+    +justify-content(space-between)
+    +flex-grow(1)
+
+  .modal-header,
+  .modal-footer
+    +flex-grow(0)
+    +flex-shrink(0)
+
+  .modal-content
+    +flex-grow(1)
+    +flex-shrink(0)
+    background-color: #fff
+    overflow: auto
+
+  .modal-header
+    +border-top-radius(3px)
+    background-color: $wwl-js-vm-modals-header-color
+
+  .modal-footer
+    +border-bottom-radius(3px)
+    background-color: $wwl-js-vm-modals-footer-color
+
+  .modal-header-inside,
+  .modal-footer-inside
+    +clearfix
+    box-sizing: border-box
+
+  .modal-header-inside
+    display: block
+    padding: 8px
+    position: relative
+    width: auto
+
+  .modal-footer-inside
+    display: block
+    padding: 8px
+    position: relative
+    width: auto
+
+  .modal-header-inside
+
+    h1
+      color: $wwl-js-vm-modals-headline-color
+      font-weight: 200
+      font-size: 16px
+      line-height: 26px
+      margin: 5px
+
+  .modal-footer-inside
+    text-align: right
+
+  .modal-header-inside,
+  .modal-footer-inside
+
+    .wwl-button
+      +user-select(none)
+      background: transparent
+      border-radius: 3px
+      box-sizing: border-box
+      color: $wwl-js-vm-modals-color-text
+      cursor: pointer
+      display: inline-block
+      font: inherit
+      margin: 0 0.29em
+      min-width: 5.14em
+      padding: 0.7em 0.57em
+      position: relative
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      outline: none
+      outline-width: 0
+      z-index: 0
+
+      &:hover
+        background-color: rgba(#000, 0.05)
+
+      &:active
+        background-color: rgba(#000, 0.1)
+
+      &.wwl-button-close,
+      &.wwl-button-back
+        border: 1px solid darken($wwl-js-vm-modals-headline-color, 50%)
+        color: $wwl-js-vm-modals-headline-color
+        height: 32px
+        line-height: 32px
+        min-width: 0
+        padding: 0 8px
+
+        &:hover
+          background-color: lighten($wwl-js-vm-modals-header-color, 10%)
+
+      &.wwl-button-close
+        float: right
+        margin: 2px 0 0 0
+
+      &.wwl-button-back
+        float: left
+        margin: 2px 8px 0 0
+
+      &.wwl-button-success
+        background-color: #afd23e
+        color: #424242
+
+        &:hover
+          background-color: lighten(#afd23e, 5%)
+
+        &:active
+          background-color: lighten(#afd23e, 15%)
+
+  .modal-footer-inside
+
+    .wwl-button
+      &.wwl-button-back
+        border-color: darken($wwl-js-vm-modals-footer-color, 10%)
+        color: #666
+        height: 36px
+        line-height: 36px
+        padding: 0 10px
+
+        &:hover
+          background-color: darken($wwl-js-vm-modals-footer-color, 5%)
+
