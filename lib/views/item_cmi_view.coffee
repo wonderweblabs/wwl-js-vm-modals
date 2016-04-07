@@ -72,6 +72,8 @@ module.exports = class ItemCmiView extends require('./item_abstract_view')
     m.backBtnTop        = @model.get('backTopButton')
     m.backBtnBottom     = @model.get('backBottomButton')
     m.noCancelOnEscKey  = @model.get('noCancelOnEscKey')
+    m.entryAnimation    = @model.get('entryAnimation')
+    m.exitAnimation     = @model.get('exitAnimation')
     m.noCancelOnOutsideClick = true
 
 

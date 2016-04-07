@@ -20,6 +20,10 @@ module.exports = class Modal extends require('backbone').Model
     destroyOnBackdrop:  false
     destroyOnClose:     false
 
+    # cmi only:
+    entryAnimation:     'scale-up-animation'
+    exitAnimation:      'fade-in-animation'
+
   initialize: (options = {}) =>
     @listenTo @, 'view:attach', @onViewAttach
 
