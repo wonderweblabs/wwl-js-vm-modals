@@ -11,7 +11,7 @@ module.exports = class Modal extends require('backbone').Model
     cancelButton:     ''
     doneButton:       ''
     successButton:    ''
-    noCancelOnEscKey:           false
+    noCancelOnEscKey:           true
     disableBackdropClickClose:  false
     viewId:           ''
     viewClass:        ''
