@@ -1,6 +1,6 @@
 {
   "name": "wwl-js-vm-modals",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "lib/index.coffee",
   "scripts": {
@@ -15,7 +15,9 @@
   },
   "license": "MIT",
   "files": [
+    "css",
     "lib",
+    "bower.json",
     "LICENSE",
     "package.json",
     "README.md"
