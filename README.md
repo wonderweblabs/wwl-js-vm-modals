@@ -1,5 +1,11 @@
 # WWL VM Modals
 
+| Current Version |
+|-----------------|
+| [![npm version](https://badge.fury.io/js/wwl-js-vm-modals.svg)](https://badge.fury.io/js/wwl-js-vm-modals) |
+
+---
+
 View module ([wwl-js-vm](https://github.com/wonderweblabs/wwl-js-vm)) implementation to maintain a stack of modals. The implementation is based on [backbone](http://backbonejs.org/) and [backbone.marionette](http://marionettejs.com/).
 
 Each modal requires to get a view object (Backbone.View api compatible) to passed in for each modal. The model will render that view as content.
